@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    margin: 0px;
+    margin-top: 1rem;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img_intro{
+    margin: 1rem;
+}
+
+.header{
+    display: grid;
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.menu a {
+    background-color: #ffff;
+    padding: 1rem 2rem;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+.menu a:hover{
+    border: 1px solid #e21;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    /* align-items: center; */
+    width: 60rem;
+}
+
+.introducao{
+    display: grid;
+    justify-items: end;
+    margin: 0px;
+    padding: 3rem;
+    text-align: right;
+    position: relative;
+}
+
+.introducao h2::before{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #e21;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.introducao p{
+    font-size: 1.3rem;
+}
+
+.button{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    background-color: #e21;
+    width: 5rem;
+    height: 1.3rem;
+    display: inline-block;
+}
+
+.button:hover{
+    background-color: #900;
+}
+
+.subtitulo{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+    align-self: center;
+    padding: 40px;
+    background-image: url("./img/onda.svg");
+}
