@@ -8,20 +8,27 @@ body{
     margin-top: 1rem;
 }
 
-img{
+img {
     max-width: 100%;
-    display: inline-block;
-}
-
-a{
+    display: block;
+  }
+  
+  a {
     text-decoration: none;
-}
-
-ul{
+  }
+  
+  ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
-}
+  }
+  
+  p,
+  h1,
+  h2,
+  h3 {
+    margin: 0px;
+  }
 
 .img_intro{
     margin: 1rem;
@@ -46,6 +53,7 @@ ul{
     color: #000000;
     text-transform: uppercase;
     border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .menu a:hover{
@@ -55,17 +63,16 @@ ul{
 .conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    /* align-items: center; */
-    width: 60rem;
+    max-width: 1000px;
 }
 
 .introducao{
+    background-color: #fff;
     display: grid;
-    justify-items: end;
     margin: 0px;
     padding: 3rem;
     text-align: right;
+    justify-items: end;
     position: relative;
 }
 
@@ -106,4 +113,37 @@ ul{
     align-self: center;
     padding: 40px;
     background-image: url("./img/onda.svg");
+}
+
+.vantagens{
+    background: #fff;
+    padding: 40px;
+}
+
+.vantagens-item{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px 20px; /* 10px -> valor da linha, 20px -> valor das colunas*/
+    padding: 20px;
+    border-left: 3px solid transparent;
+}
+
+.vantagens-item p {
+    grid-column: 2;
+}
+
+.vantagens-item:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.vantagens-item:hover{
+    border-color: #e21;
+}
+
+.rodape {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
 }
